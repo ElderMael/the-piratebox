@@ -1,8 +1,10 @@
 name: "build"
 on: [push]
+description: Builds the arm image
+runs:
 jobs:
   packer:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: build.sh
+      - run: ./build.sh
