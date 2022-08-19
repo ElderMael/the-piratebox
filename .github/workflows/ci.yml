@@ -1,7 +1,5 @@
 name: "build"
 on: [push]
-description: Builds the arm image
-runs:
 jobs:
   packer:
     runs-on: ubuntu-latest
